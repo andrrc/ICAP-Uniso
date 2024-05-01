@@ -4,18 +4,18 @@
     --verde-escuro:#807B3E;
 }
 @font-face {
-    font-family: 'titulos';
+    font-family: 'Hammersmith';
     src: url(../media/font/HammersmithOne-Regular.ttf);
 }
 @font-face {
-    font-family: 'descricoes';
+    font-family: 'Alata';
     src: url(../media/font/Alata-Regular.ttf);
 }
 html, body{
     height: 100%;
 }
 body{
-    background-color: var(--laranja);
+    background-color: #Ffff;
 }
 *{
     padding: 0;
@@ -23,6 +23,12 @@ body{
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
+
+/* Inicio Header */
+nav{
+    fill: var(--Amarelo-fundo-do-site, #FEFCDD);
+    filter: drop-shadow(0px 4px 17.2px rgba(0, 0, 0, 0.25));
 }
 header,nav{
     width: 100vw;
@@ -58,11 +64,70 @@ li > a{
     color: var(--verde-escuro);
 }
 a{
-    font-family: 'descricoes';
+    font-family: 'Alata';
     font-weight: 400;
     font-size: 20px;
 }
 .entrar-li{
     gap: 20px;
     display: flex;
+}
+/* Fim Header*/ 
+
+/* Inicio Info*/
+.inicio-icap{
+    width: 100vw;
+    height: 85%;
+    background-color: var(--laranja);
+    border-radius: 0 0 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    box-shadow: 0px 13px 28.3px 0px rgba(0, 0, 0, 0.25);
+}
+article{
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Hammersmith';
+    font-size: 40px;
+    width: 350px;
+}
+h2{
+    font-family: 'Alata';
+    font-size: 20px;
+    width: 200px;
+}
+.botao-cadastrar{
+    text-transform: uppercase;
+    font-family: "Hammersmith";
+    background-color: white;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 50px;
+    color: var(--laranja);
+    box-shadow: rgba(0, 0, 0, 0.247) -11px 6px 14px;
+}
+.aside-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+.aside-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside > h1, aside > h2, aside > a {
+    color: white;
+}
+.arrow-down{
+    position: absolute;
+    bottom: 50px;
 }

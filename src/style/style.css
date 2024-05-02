@@ -16,6 +16,8 @@ html, body{
 }
 body{
     background-color: #Ffff;
+    scroll-behavior: smooth ;
+    overflow-x: hidden;
 }
 *{
     padding: 0;
@@ -27,18 +29,26 @@ body{
 
 /* Inicio Header */
 nav{
-    fill: var(--Amarelo-fundo-do-site, #FEFCDD);
-    filter: drop-shadow(0px 4px 17.2px rgba(0, 0, 0, 0.25));
+    
 }
 header,nav{
     width: 100vw;
     height: 10vh;
+    
+}
+header{
     background-color: white;
+    fill: var(--Amarelo-fundo-do-site, #FEFCDD);
+    filter: drop-shadow(0px 4px 17.2px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-inline: -200px;
 }
 ul{
     display: flex;
@@ -78,33 +88,38 @@ a{
 .inicio-icap{
     width: 100vw;
     height: 85%;
-    background-color: var(--laranja);
+    background-color: var(--laranja-claro);
     border-radius: 0 0 50% 50%;
     display: flex;
     justify-content: center;
     align-items: top;
     box-shadow: 0px 13px 28.3px 0px rgba(0, 0, 0, 0.25);
+    
 }
-article{
-    width: 75%;
-    height: 75%;
+.main-banner{
+    width: 900px;
+    height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-inline: -200px;
 }
-h1{
+ aside > h1{
     font-family: 'Hammersmith';
     font-size: 40px;
-    width: 350px;
+    width: 400px;
+    
 }
-h2{
+aside > h2{
     font-family: 'Alata';
-    font-size: 20px;
-    width: 200px;
+    font-size: 30px;
+    width: 400px;
 }
 .botao-cadastrar{
     text-transform: uppercase;
     font-family: "Hammersmith";
     background-color: white;
+    width: 250px;
+    text-align: center;
     padding-inline: 40px;
     padding-block: 10px;
     border-radius: 50px;
@@ -115,11 +130,12 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 40px;
-
 }
 .aside-imagem{
+    width: 600px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +143,79 @@ h2{
 aside > h1, aside > h2, aside > a {
     color: white;
 }
+aside > img{
+    margin-bottom: -100px;
+}
 .arrow-down{
     position: absolute;
     bottom: 50px;
+}
+/* Inicio Sobre*/
+.sobre-icap{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.artigo-sobre{
+    margin-inline: -200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.info-sobre{
+    font-family: "Alata";
+    font-size: 35px;
+    color: var(--verde-escuro);
+}
+.info-ferramentas{
+    font-family: "Alata";
+    font-size: 40px;
+    color: var(--verde-escuro);
+}
+.artigo-ferramentas{
+    
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.texto-left > h2, .texto-agua > h2{
+ font-family: "Alata";
+ color: var(--laranja-claro);
+}
+.texto-left > h3, .texto-agua > h3{
+    font-family: "Alata";
+    color: var(--verde-escuro);
+}
+.div-conteudo-left{
+    width: 520px;
+    margin-top: 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-left{
+    margin-left: 20px;
+}
+.div-sugestoes{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+.texto-agua > h3{
+    width: 250px;
+}
+.secao-auxiliar{
+    margin-inline: -200px;
 }

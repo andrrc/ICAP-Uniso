@@ -1,25 +1,31 @@
-:root{
+:root {
     --laranja-claro: #FFCC2F;
     --laranja: #FFB51B;
-    --verde-escuro:#807B3E;
+    --verde-escuro: #807B3E;
 }
+
 @font-face {
     font-family: 'Hammersmith';
     src: url(../media/font/HammersmithOne-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Alata';
     src: url(../media/font/Alata-Regular.ttf);
 }
-html, body{
+
+html,
+body {
     height: 100%;
 }
-body{
-    background-color: #Ffff;
-    scroll-behavior: smooth ;
+
+body {
+    background-color: #FEFCDD;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -28,15 +34,16 @@ body{
 }
 
 /* Inicio Header */
-nav{
-    
-}
-header,nav{
+nav {}
+
+header,
+nav {
     width: 100vw;
     height: 10vh;
-    
+
 }
-header{
+
+header {
     background-color: white;
     fill: var(--Amarelo-fundo-do-site, #FEFCDD);
     filter: drop-shadow(0px 4px 17.2px rgba(0, 0, 0, 0.25));
@@ -44,48 +51,57 @@ header{
     justify-content: center;
     align-items: center;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-inline: -200px;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
     gap: 50px;
-    
+
 }
-li{
+
+li {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-li > a{
+
+li>a {
     text-transform: uppercase;
 }
-.cadastrar{
+
+.cadastrar {
     color: var(--laranja);
 }
-.entrar{
+
+.entrar {
     color: var(--verde-escuro);
 }
-a{
+
+a {
     font-family: 'Alata';
     font-weight: 400;
     font-size: 20px;
 }
-.entrar-li{
+
+.entrar-li {
     gap: 20px;
     display: flex;
 }
-/* Fim Header*/ 
+
+/* Fim Header*/
 
 /* Inicio Info*/
-.inicio-icap{
+.inicio-icap {
     width: 100vw;
     height: 85%;
     background-color: var(--laranja-claro);
@@ -94,27 +110,31 @@ a{
     justify-content: center;
     align-items: top;
     box-shadow: 0px 13px 28.3px 0px rgba(0, 0, 0, 0.25);
-    
+
 }
-.main-banner{
+
+.main-banner {
     width: 900px;
     height: 80%;
     display: flex;
     justify-content: space-between;
     margin-inline: -200px;
 }
- aside > h1{
+
+aside>h1 {
     font-family: 'Hammersmith';
     font-size: 40px;
     width: 400px;
-    
+
 }
-aside > h2{
+
+aside>h2 {
     font-family: 'Alata';
     font-size: 30px;
     width: 400px;
 }
-.botao-cadastrar{
+
+.botao-cadastrar {
     text-transform: uppercase;
     font-family: "Hammersmith";
     background-color: white;
@@ -126,32 +146,40 @@ aside > h2{
     color: var(--laranja);
     box-shadow: rgba(0, 0, 0, 0.247) -11px 6px 14px;
 }
-.aside-textos{
+
+.aside-textos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     gap: 40px;
 }
-.aside-imagem{
+
+.aside-imagem {
     width: 600px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-aside > h1, aside > h2, aside > a {
+
+aside>h1,
+aside>h2,
+aside>a {
     color: white;
 }
-aside > img{
+
+aside>img {
     margin-bottom: -100px;
 }
-.arrow-down{
+
+.arrow-down {
     position: absolute;
     bottom: 50px;
 }
+
 /* Inicio Sobre*/
-.sobre-icap{
+.sobre-icap {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -159,7 +187,8 @@ aside > img{
     justify-content: center;
     align-items: center;
 }
-.artigo-sobre{
+
+.artigo-sobre {
     margin-inline: -200px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -168,18 +197,21 @@ aside > img{
     flex-direction: column;
     align-items: center;
 }
-.info-sobre{
+
+.info-sobre {
     font-family: "Alata";
     font-size: 35px;
     color: var(--verde-escuro);
 }
-.info-ferramentas{
+
+.info-ferramentas {
     font-family: "Alata";
     font-size: 40px;
     color: var(--verde-escuro);
 }
-.artigo-ferramentas{
-    
+
+.artigo-ferramentas {
+
     width: 100vw;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -189,15 +221,20 @@ aside > img{
     justify-content: start;
     align-items: center;
 }
-.texto-left > h2, .texto-agua > h2{
- font-family: "Alata";
- color: var(--laranja-claro);
+
+.texto-left>h2,
+.texto-agua>h2 {
+    font-family: "Alata";
+    color: var(--laranja-claro);
 }
-.texto-left > h3, .texto-agua > h3{
+
+.texto-left>h3,
+.texto-agua>h3 {
     font-family: "Alata";
     color: var(--verde-escuro);
 }
-.div-conteudo-left{
+
+.div-conteudo-left {
     width: 520px;
     margin-top: 50px;
     height: fit-content;
@@ -205,17 +242,53 @@ aside > img{
     justify-content: center;
     align-items: center;
 }
-.texto-left{
+
+.texto-left {
     margin-left: 20px;
 }
-.div-sugestoes{
+
+.div-sugestoes {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 50px;
 }
-.texto-agua > h3{
+
+.texto-agua>h3 {
     width: 250px;
 }
-.secao-auxiliar{
+
+.secao-auxiliar {
     margin-inline: -200px;
+}
+
+.carrousel {
+    width: 100vw;
+    height: 30rem;
+    background-color: red;
+}
+
+.nutricional {
+    width: 100vw;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nutricional>article {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.nutricional>article>h1 {
+    color: var(--laranja-claro);
+    font-family: "Alata";
+    font-size: 45px;
+    text-align: center;
 }
